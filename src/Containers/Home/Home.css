@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Belgan Aesthetic";
+    src: url(../../assets/belgant-aesthetic.otf) format("opentype")
+}
+
+.designHome {
+    height: 90vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.designHomeLogin {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.divSuperior {
+    height: 60vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.divInferior {
+    height: 30vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.recuadro {
+    height: inherit;
+    width: 25vw;
+}
+
+.cuadro1 {
+    height: inherit;
+    width: 50vw;
+
+    color: #000000;
+    font-size: 13em;
+    font-family: "Belgan Aesthetic";
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.cuadro2 {
+    height: inherit;
+    width: 50vw;
+
+    color: #000000;
+    font-size: 10em;
+    font-family: "Belgan Aesthetic";
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.espacio1 {
+    width: 0.2em;
+    height: inherit;
+}
+
+.espacio2 {
+    width: 0.3em;
+    height: inherit;
+}
+
+.colorAmarillo {
+    background-color: #ffdd00;
+}
+
+.colorRojo {
+    background-color: #fa4238;
+}
+
+.colorVerde {
+    background-color: #00ce7c;
+}
+
+.colorBlanco {
+    background-color: #ffffff;
+}
+
+.colorNegro {
+    background-color: #000000;
+}
