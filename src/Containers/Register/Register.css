@@ -1,0 +1,94 @@
+.designRegister {
+    background-color: #00ce7c;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cardRegister {
+
+    height: 40em;
+    width: 50em;
+
+    background-color: #ffffff;
+
+    outline: 2px solid #000000;
+
+    border-radius: 4em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upCardRegister {
+    height: 6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #000000;
+    font-size: 2em;
+
+}
+
+.middleCardRegister {
+    height: 32em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size : 1em;
+    color: black;
+
+}
+
+.superInput {
+    height: 2.4em;
+    width: 20em;
+
+    border-radius: 4em;
+}
+
+.bottomCardRegister {
+    height: 10em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botonRegistro {
+
+    height: 4em;
+    width: 10em;
+
+    background-color: #ffdd00;
+
+    outline: 2px solid #000000;
+
+    border-radius: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonRegistro:hover {
+
+    transition: 0.125s;
+
+    font-weight: bold;
+    cursor: pointer;
+}

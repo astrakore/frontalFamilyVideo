@@ -1,20 +1,10 @@
-import { useNavigate } from 'react-router-dom';
-
-export const takeMeLogin = () => {
-
-    setTimeout(()=>{
-        useNavigate("/login");
-    },1500)
-
-}
-
 export const checkError = (type,value) => {
 
     switch(type) {
 
-        case 'email' :
+        case 'correo' :
 
-            if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(value) ) {
+            if (! /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(value) ) {
                 
                 return "Introduce un e-mail válido";
             }else{
@@ -41,14 +31,6 @@ export const checkError = (type,value) => {
             return "ok";
         
     }
-};
-
-export const takeMeRegister = () => {
-
-    setTimeout(()=>{
-        useNavigate("/register");
-    },);
-
 };
 
 export const raiz = "https://image.tmdb.org/t/p/w185";

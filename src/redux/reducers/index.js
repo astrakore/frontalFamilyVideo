@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux';
 
-import credentials from './datosLogin-reducer';
+import credenciales from './datosLogin-reducer';
 import search from './busquedaFilms-reducer';
 
 const rootReducer = combineReducers({
-    credentials,
+    credenciales,
     search
 });
 

@@ -1,15 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LOGOUT, MOVIES_TITLE } from '../../redux/types';
+import { LOGOUT } from '../../redux/types';
 import './Header.css';
 import { connect } from 'react-redux';
-import axios from 'axios';
 
 const Header = (props) => {
 
     let navigate = useNavigate();
-
-    const [titulo, setTitulo] = useState("");
 
     useEffect(() => {
         
@@ -25,39 +22,14 @@ const Header = (props) => {
 
     const logOut = () => {
         
-        props.dispatch({ type: LOGOUT });
+        props.dispatch({type: LOGOUT});
 
         setTimeout(() => {
             navigate("/");
         }, 1500);
     }
 
-    const manejador = (ev) => {
-        setTitulo(ev.target.value);
-    }
-
-    const busquedaPorTitulo = async () => {
-    
-        //Axios que trae resultados....
-
-        try {
-            let resultados = await axios.get(`https://videostore-backend.herokuapp.com/films/custom?arg=${titulo}`);
-
-            //Guardo en redux los resultados de las películas
-
-            props.dispatch({type: MOVIES_TITLE, payload: resultados.data});
-
-            setTimeout(()=>{
-                navigate("/searchresults");
-            },500);
-
-
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    if (!props.credentials?.token) {
+    if (!props.credenciales?.token) {
         return(
             <div className="designHeader">
                 <div className="section"></div>
@@ -84,5 +56,5 @@ const Header = (props) => {
 }
 
 export default connect((state) => ({
-    credentials: state.credentials
+    credenciales: state.credenciales
 }))(Header);

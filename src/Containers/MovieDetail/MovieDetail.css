@@ -1,0 +1,55 @@
+.designFilm {
+
+    background-color: #00ce7c;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 90em;
+    width: 100vw;
+}
+
+
+.filmDetailHalf1 {
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 4em;
+
+    padding: 2em;
+
+    width: 50vw;
+
+}
+
+.filmDetailHalf2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2em;
+
+    width: 50vw;
+
+}
+
+.dataFilm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20em;
+    font-size: 2em;
+}
+
+.cartel {
+    width: 20em;
+}

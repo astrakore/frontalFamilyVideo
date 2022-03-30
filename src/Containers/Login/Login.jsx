@@ -48,7 +48,7 @@ const Login = (props) => {
                 props.dispatch({type:LOGIN, payload: resultado.data});
 
                 setTimeout(()=>{
-                    navigate("/");
+                    navigate("/movies");
                 },1500);
             }
 

@@ -1,0 +1,21 @@
+.designRent {
+    height: 6vh;
+    width: 10vw;
+
+    background-color: #ffdd00;
+
+    color: #000000;
+
+    outline: 2px solid #000000;
+    border-radius: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.designRent:hover {
+    font-weight: bold;
+
+    cursor: pointer;
+}
