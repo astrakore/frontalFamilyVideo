@@ -43,8 +43,7 @@ const Login = (props) => {
             
             if(resultado.data === "Usuario o contraseña inválido"){
                 setMsgError2("Usuario o contraseña inválido")
-            }else if (!resultado.token) {
-                setMsgError2("El inicio de sesión ha fallado por causas internas");
+            
             }else{
 
                 props.dispatch({type:LOGIN, payload: resultado.data});
