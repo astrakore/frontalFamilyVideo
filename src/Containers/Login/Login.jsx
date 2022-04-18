@@ -13,7 +13,7 @@ const Login = (props) => {
     let navigate = useNavigate();
 
     //1 - HOOKS ----------------------------------------------------------------------------------------------
-    const [datosUsuario, setDatosUsuario] = useState({email: "", password: ""});
+    const [datosUsuario, setDatosUsuario] = useState({correo: "", password: ""});
     const [msgError, setMsgError] = useState("");
     const [msgError2, setMsgError2] = useState("");
 
@@ -35,7 +35,7 @@ const Login = (props) => {
 
             //Me invento las credenciales
             let body = {
-                 email: datosUsuario.email,
+                 correo: datosUsuario.correo,
                  password: datosUsuario.password
             }
 
@@ -68,7 +68,7 @@ const Login = (props) => {
             <div className="loginForm">
                 Accede a tu cuenta
                 <div className="designFormulario">
-                    <input className="inputcito" type="email" name="email" id="email" title="email" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className="inputcito" type="email" name="correo" id="correo" title="correo" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className="inputcito" type="password" name="password" id="password" title="password" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e);}}/>
                     {msgError}
                     {msgError2}
@@ -79,4 +79,6 @@ const Login = (props) => {
     )
 };
 
-export default connect()(Login);
+export default connect((state)=>({
+    credentials: state.credentials
+}))(Login);
