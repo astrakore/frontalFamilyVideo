@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Family Video: Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introducción
 
-## Available Scripts
+Como quinto proyecto del Bootcamp FullStack Developer de GeeksHubs Academy, se nos encargó realizar el frontend del ya realizado backend de un videoclub a domicilio.
 
-In the project directory, you can run:
+## Tabla de contenidos
 
-### `npm start`
+* [Instrucciones de inicio](#instrucciones-de-inicio)
+* [Funciones](#funciones)
+* [Diseño](#diseño)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instrucciones de inicio
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+El frontend está deployado en AWS, se puede acceder mediante el siguiente enlace: [Pincha aquí](https://master.d2ag7aygvmn19a.amplifyapp.com/)
 
-### `npm test`
+## Funciones
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Desde la pantalla de Home, podemos, según nuestras necesidades, registrarnos en el videoclub o acceder a nuestro perfil dándole al botón correspondiente.
 
-### `npm run build`
+![Pantalla Home](/videoclub/src/assets/readme01.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Si decidimos registrarnos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Desde aquí podremos registrarnos en el videoclub. Importante: la contraseña debe tener mínimo 8 caracteres y uno debe ser un número.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Pantalla Registro](/videoclub/src/assets/readme02.png)
 
-### `npm run eject`
+### Si decidimos acceder a nuestro perfil
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Desde aquí podremos acceder a nuestro perfil.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Pantalla Acceder](/videoclub/src/assets/readme03.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Películas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Desde esta pantalla podremos ver las películas disponibles para alquilar.
 
-## Learn More
+![Pantalla Películas](/videoclub/src/assets/readme04.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Habiendo escogido una película...
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Si hacemos click en una de las películas, nos saldrá la vista de los detalles de la película, que contiene el título, la sinopsis y el botón "alquilar".
 
-### Code Splitting
+![Pantalla Detalle Película](/videoclub/src/assets/readme05.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Diseño
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+El diseño de la aplicación y el de la pantalla de Home especialmente está inspirado en el diseño [Oh Happy Days](https://days.christou1910.com/en) de Christou 1910.
