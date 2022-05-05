@@ -18,31 +18,31 @@ El frontend está deployado en AWS, se puede acceder mediante el siguiente enlac
 
 Desde la pantalla de Home, podemos, según nuestras necesidades, registrarnos en el videoclub o acceder a nuestro perfil dándole al botón correspondiente.
 
-![Pantalla Home](/videoclub/src/assets/readme01.png)
+![Pantalla Home](/videoclub/src/assets/readme01.png "readme01.png")
 
 ### Si decidimos registrarnos
 
 Desde aquí podremos registrarnos en el videoclub. Importante: la contraseña debe tener mínimo 8 caracteres y uno debe ser un número.
 
-![Pantalla Registro](/videoclub/src/assets/readme02.png)
+![Pantalla Registro](/videoclub/src/assets/readme02.png "readme02.png")
 
 ### Si decidimos acceder a nuestro perfil
 
 Desde aquí podremos acceder a nuestro perfil.
 
-![Pantalla Acceder](/videoclub/src/assets/readme03.png)
+![Pantalla Acceder](/videoclub/src/assets/readme03.png "readme03.png")
 
 ### Películas
 
 Desde esta pantalla podremos ver las películas disponibles para alquilar.
 
-![Pantalla Películas](/videoclub/src/assets/readme04.png)
+![Pantalla Películas](/videoclub/src/assets/readme04.png "readme04.png")
 
 ### Habiendo escogido una película...
 
 Si hacemos click en una de las películas, nos saldrá la vista de los detalles de la película, que contiene el título, la sinopsis y el botón "alquilar".
 
-![Pantalla Detalle Película](/videoclub/src/assets/readme05.png)
+![Pantalla Detalle Película](/videoclub/src/assets/readme05.png "readme05.png")
 
 ## Diseño
 
